@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven'
-        jdk 'JDK'
+        maven 'maven'
+        jdk 'jdk'
     }
 
     stages {
@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/your-username/maven-hello-world.git'
+                url: 'https://github.com/brundhas26/maven-hello-world.git'
             }
         }
 
